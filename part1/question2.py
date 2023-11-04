@@ -16,6 +16,12 @@
 # `question2_test.py.`
 
 swapper = None
+""" swapper = lambda x: (x[1], x[0]) """
+def swap_elements(x):
+  a,b = x
+  return (b,a)
+swapper = swap_elements
 
 def run_swapper(list_of_tuples):
   return list(map(swapper, list_of_tuples))
+
